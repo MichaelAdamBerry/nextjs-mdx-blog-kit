@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "@emotion/styled";
-const BlogHeroImg = ({ src, alt }) => {
+const BlogHeroImg = ({ src, alt, caption }) => {
   return (
     <BlogImageContainer>
-      <img
-        src={src}
-        alt={alt}
-      />
+      <figure>
+        <img src={src} alt={alt} />
+        {caption != undefined && <figcaption>{caption}</figcaption>}
+      </figure>
     </BlogImageContainer>
   );
 };
