@@ -79,6 +79,7 @@ export function posts() {
   return postFileNames()
     .then(fileNameList => {
       const postList = createPostList(fileNameList);
+      console.log("postList", postList);
       const sortedList = postList
         .sort((a, b) => a.secondsSinceEpoch - b.secondsSinceEpoch)
         .reverse();

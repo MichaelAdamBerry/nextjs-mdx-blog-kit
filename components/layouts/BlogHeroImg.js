@@ -1,17 +1,17 @@
 import React from "react";
 import styled from "@emotion/styled";
-const Gif = ({ src }) => {
+const BlogHeroImg = ({ src, alt }) => {
   return (
     <BlogImageContainer>
       <img
         src={src}
-        alt="GIF Meme of Jack from Nightmare Before Christmas Saying What Does it Mean?"
+        alt={alt}
       />
     </BlogImageContainer>
   );
 };
 
-export default Gif;
+export default BlogHeroImg;
 
 const BlogImageContainer = styled.div`
   width: 100%;

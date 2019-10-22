@@ -14,6 +14,7 @@ export const meta = {
 
 export default function Blog(props) {
   const blogPosts = props.allData.filter(content => content.type == "post");
+  console.log(blogPosts);
   return (
     <List>
       <h1>{meta.title}</h1>
