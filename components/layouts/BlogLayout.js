@@ -9,7 +9,6 @@ export const BlogContent = styled.div`
   max-width: 550px;
   padding: 1rem 0;
   margin: auto;
-  margin-bottom: 2rem;
 
   h2 {
     font-size: 2rem;
@@ -23,6 +22,7 @@ export const BlogContent = styled.div`
 
   @media (max-width: 550px) {
     max-width: 350px;
-    justify-self: center;
+
+    magin: auto;
   }
 `;

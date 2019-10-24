@@ -1,17 +1,14 @@
 import BlogMeta from "../components/BlogMeta";
+import Welcome from "../components/Welcome";
 
 export const meta = {
   title: "Programming Posts",
   tags: ["Next.js", "MDX"],
-  layout: "blog-post-list",
+  layout: "post",
   publishDate: "2019-10-08",
   modifiedDate: false,
   seoDescription:
     "All of your blog posts are listed on this page, unless a post has the meta property `exclude: true`."
 };
 
-#All Posts
-
-**View Source:** If you view the source of this webpage, you will see that pages are rendered and minified on a server and served as static files.
-
-**Lighthouse:** If you want first-hand evidence of the audit scores shown in the project README.md, feel free to run a Lighthouse audit of this site. _Scores are more accurate when run in an incognito browser because Chrome extensions can adversely affect scores._
+<Welcome />

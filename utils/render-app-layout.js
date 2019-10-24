@@ -21,25 +21,27 @@ export function renderLayout(props, state) {
       );
     case "search":
       return (
-        <SearchContent>
-          <Component {...props} />
-        </SearchContent>
+        <div className="site-container">
+          <SearchContent>
+            <Nav />
+            <Component {...props} />
+          </SearchContent>
+        </div>
       );
     case "blog-post-list":
       return (
-        <React.Fragment>
-          <div className="site-container">
-            <Nav />
-            <Component {...props} />
-          </div>
-        </React.Fragment>
+        <div className="site-container">
+          <Nav />
+          <Component {...props} />
+        </div>
       );
     case "page":
     default:
       return (
-        <React.Fragment>
+        <div className="site-container">
+          <Nav />
           <Component {...props} postData={postData} />
-        </React.Fragment>
+        </div>
       );
   }
 }
