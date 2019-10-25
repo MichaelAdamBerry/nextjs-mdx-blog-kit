@@ -1,7 +1,8 @@
 import { Component } from "react";
 import List from "../components/List";
 import Title from "../components/Title";
-
+import { SideTitle } from "../code-snippets/styled-components/SideTitle";
+import { plugin } from "postcss";
 export const meta = {
   title: "Landing Page for Web Development Blog",
   // The tags are used for SEO in the header property: `<meta name="keywords" content={stringOfAllPostTags} />`
@@ -16,9 +17,12 @@ export const meta = {
 };
 
 export default ({ allData = [] }) => {
+  //TODO MapBlog posts?
+
   return (
     <>
-      <Title name="blog" />
+      <SideTitle>HTML ○ CSS ○ Javascript</SideTitle>
+
       <List allData={allData} />
     </>
   );

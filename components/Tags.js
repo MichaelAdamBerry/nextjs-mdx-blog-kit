@@ -18,7 +18,7 @@ function tagMaker(tagList) {
 }
 
 const Tag = styled.div`
-  margin: 1rem 0 2rem 0;
+  margin: 0.5rem 0 0.5rem 0;
 `;
 
 const TagLink = styled.a`

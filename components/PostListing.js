@@ -9,7 +9,7 @@ export default function PostListing(props) {
   const { post, index } = props;
   return (
     <React.Fragment key={`post-list-${index}`}>
-      <PostPreview key={`${post.name}-headline`}>
+      <PostPreview key={`${post.name}-headline`} index={index}>
         <PostTitle>
           <Link prefetch href={`/blog/${post.name}`}>
             <a>{post.title}</a>

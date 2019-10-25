@@ -1,6 +1,12 @@
 import SyntaxHighlighter from "react-syntax-highlighter/prism";
 import { darcula } from "react-syntax-highlighter/styles/prism";
 
+export const CodeBlockSvelte = props => {
+  <>
+    <pre>{props.code}</pre>
+  </>;
+};
+
 export const CodeBlockJS = props => {
   return (
     <>
