@@ -70,7 +70,7 @@ const createPostList = fileNameList => {
       secondsSinceEpoch,
       ...moreMeta // any extra properties a post may have
     });
-
+    console.log("-CreatePostList --->", collection);
     return collection;
   }, []);
 };

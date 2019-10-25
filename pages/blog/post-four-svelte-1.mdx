@@ -3,11 +3,11 @@ import { CodeBlockSvelte } from "../../code-snippets/CodeBlocks";
 import { One, Two, Three, Four } from "../../code-snippets/PostFourSnippets";
 
 export const meta = {
-  title: "Introduction to Svelte",
+  title: "Introduction to Svelte Part 1",
   // the first tag below will be used in <meta property="article:tag" content="first-tag" />
   tags: ["Svelte", "Javascript", "Frameworks"],
   layout: "post",
-  publishDate: "2019-10-25",
+  publishDate: "2019-10-24",
   modifiedDate: false, // "If used it must be in 'YYYY-MM-DD format' like publishDate"
   seoDescription:
     "First post in a new series where I introduce key concepts of Svelte",
@@ -18,9 +18,7 @@ export const meta = {
 
 <BlogMeta data={props} />
 
-## Learning Svelte - Part One
-
-This is the first post in a series about my journey learning Svelte. I'm certainly not a Svelte expert yet, but I've worked through the tutorial in the official docs and am working on an survey application. As such, this first post is in some ways more about React, the reasons I'm interested in learning a new approach, and my first impressions of Svelte
+_This is the first post in a series about my journey learning Svelte. I'm certainly not a Svelte expert yet, but I've worked through the tutorial in the official docs and am working on an survey application. As such, this first post is in some ways more about React, the reasons I'm interested in learning a new approach, and my first impressions of Svelte_
 
 ### Tl;dr
 
@@ -49,7 +47,7 @@ Rich works at the New York Times as a graphic editor and his name is often under
 
 The scope of this initial post is not to be a full tutorial. So here are what I see as the basics —
 
-- Svelte's not actually new. Version 1 was released \_\_\_\_. It's getting a lot of attention recently because Svelte 3.0 was released in the Spring and the team obviously feels like it's in a stable place.
+- Svelte's not actually new. Version 1 was released in 2016 and is currently on version 3.12.1. Significant changes were made when version 3 was realeased in the Spring of '19. And due to the simplicity of the framework, they do not anticipate many breaking changesmoving forward.
 - Svelte's main selling point is that it eliminates the need for a virtual DOM. Instead there is build phase which transforms all the .svelte files to plain javascript. This reduces the amount of code that is shipped to browser as svelte doesn't need to ship a Svelte library with the code.
 - This feels natural to me. I've been steeped in JAM stack development for a while now building projects with Gatsby and Next. Before Next and Gatsby sites deploy there is a build phase to convert code to static HTML which is rehydrated in the browser.
 
@@ -59,7 +57,7 @@ Here's the basic structure of a component in Svelte —
 
 As you can see, this is a pretty familiar looking structure. We have script tags where we write our javascript. Style tags contain CSS that is scoped to this component, and we are writing regular html with a few quirky additional curly braces, hashtags, and javascript keywords.
 
-### "Please Explain:"
+### 🤨 "Please Explain:"
 
 Ok, here's a run down of the Svelte specific syntax that ties this little useless component together —
 

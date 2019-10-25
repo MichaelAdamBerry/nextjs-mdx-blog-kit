@@ -3,7 +3,8 @@ import { CodeBlockJS } from "./CodeBlocks";
 export const One = () => {
   return (
     <CodeBlockJS
-      code={` <script>
+      code={`// App.svelte
+    <script>
     	let name= "Adam Berry"
     	let interests = ["movies", "music", "magic the gathering"];
     	let show = false;
@@ -41,11 +42,12 @@ export const One = () => {
 export const Two = () => {
   return (
     <CodeBlockJS
-      code={`{#if <condition> }
+      code={`// if statements
+      {#if <condition> }
         <div>...</div>
-            {:else}
-        <div>... </div>
-    {/if}`}
+          {:else}
+            <div>... </div>
+      {/if}`}
     />
   );
 };
@@ -53,9 +55,10 @@ export const Two = () => {
 export const Three = () => {
   return (
     <CodeBlockJS
-      code={`{#each array as instance}
-  <div>{instance}</div>
-  {/each}`}
+      code={`// loops
+      {#each list as item}
+        <div>{item}</div>
+      {/each}`}
     />
   );
 };

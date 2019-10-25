@@ -14,12 +14,13 @@ export const BlogContent = styled.div`
     font-size: 2rem;
     padding: 1rem 0;
     color: var(--dark-purp);
-
-    a {
-      color: var(--dark-purp);
-    }
   }
-
+  a {
+    color: var(--dark-purp);
+  }
+  p:nth-of-type(2) {
+    margin-top: 2rem;
+  }
   @media (max-width: 550px) {
     max-width: 350px;
 
